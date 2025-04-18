@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+hr {
+  width: 90%;
+  height: 1px;
+  background: #ef233c;
+  margin: 10px auto;
+  border: none;
+}
+span {
+  color: #0eb1ac;
+  font-weight: 500;
+}
+header {
+  width: 100%;
+  min-height: 100vh;
+  background: #1b263b;
+  color: #fff;
+  position: relative;
+  border-bottom: 1px solid #1b263b;
+  border-top: 1px solid #1b263b;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #0eb1ac;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-top: 2px solid #5ff9dc;
+  border-bottom: 2px solid #5ff9dc;
+  transition: 0.3s;
+}
+nav:hover {
+  border-top: 2px solid #ef233bf0;
+  border-bottom: 2px solid #ef233bf0;
+}
+nav h1 {
+  font-size: 4vmin;
+}
+
+.nav-links ul {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 0 20px;
+  box-shadow: 2px 2px 5px #00000056;
+  border-radius: 10px;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  display: block;
+  background: #ef233c;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover:after {
+  width: 100%;
+}
+.nav-links ul li a:hover {
+  color: #3d348b;
+}
+.active {
+  color: #3d348b !important;
+  font-weight: 600;
+}
+.ctn {
+  background: #ef233c;
+  color: #fff;
+  font-size: 2.2vmin;
+  padding: 8px 12px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.ctn:hover {
+  background: #fff;
+  color: #ef233c;
+  border: 1px solid #ef233c;
+}
+.row {
+  width: 80%;
+  margin: 120px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+}
+.header-image {
+  width: 350px;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.header-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.header-image img:hover {
+  transform: scale(1.2);
+}
+
+.header-content {
+  width: 50%;
+  height: auto;
+  padding: 50px 0;
+}
+.header-content h3 {
+  font-size: 5vmin;
+  font-weight: 400;
+}
+.header-content h1 {
+  font-size: 7vmin;
+  font-weight: 600;
+}
+
+.header-content p {
+  font-size: 2.5vmin;
+  margin: 20px auto;
+  color: #ffffffc8;
+}
+.icons {
+  margin-bottom: 30px;
+}
+.icons a {
+  text-decoration: none;
+}
+.icons .fa-brands {
+  color: #0eb1ac;
+  font-size: 20px;
+  margin-right: 10px;
+  padding: 8px;
+  border: 2px solid #0eb1ac;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.icons .fa-brands:hover {
+  background-color: #0eb1ac;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+/*Skills Section*/
+.skill-section {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  color: #fff;
+  background: #0eb1ac;
+  border-bottom: 1px solid #0eb1ac;
+}
+.skill-section h1 {
+  padding-top: 80px;
+  font-size: 7vmin;
+  font-weight: 500;
+}
+.skill-section p {
+  font-size: 3vmin;
+  color: #1b263b;
+}
+.row-all {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+.skill-col {
+  flex-basis: 20%;
+  background: #1b263be5;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.skill-col:hover {
+  transform: translateY(-8px);
+  box-shadow: 6px 8px 12px #1b263b80;
+}
+.skill-col img {
+  width: 28px;
+  margin-top: 20px;
+}
+.skill-col h2 {
+  font-size: 4vmin;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.skill-col p {
+  font-size: 2.3vmin;
+  color: #cac9c9d8;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/*About Section*/
+.about {
+  width: 100%;
+  min-height: 100vh;
+  background: #1b263b;
+  color: #fff;
+  border-bottom: 1px solid #1b263b;
+  text-align: center;
+}
+.about .row-all {
+  justify-content: center;
+  gap: 80px;
+}
+.about-content {
+  width: 50%;
+  transition: 0.2s;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.about-content:hover {
+  transform: translateY(-8px);
+}
+.about h1 {
+  font-weight: 500;
+  font-size: 7vmin;
+  padding-top: 80px;
+}
+.about p {
+  color: #0eb1ac;
+  font-size: 3vmin;
+  margin-bottom: 80px;
+}
+.about-content h2 {
+  font-size: 5vmin;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.about-content p {
+  color: #ffffffc8;
+  margin-bottom: 25px;
+  font-size: 2.5vmin;
+}
+.about-content .ctn {
+  padding: 8px 20px;
+}
+.about-img {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  transition: 0.2s;
+  border: 4px solid #0eb1ac;
+}
+.about-img:hover {
+  transform: translateY(-8px);
+  border: 4px solid #ef233c;
+}
+.about-img img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+/*contact Section*/
+
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  background: #0eb1ac;
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #0eb1ac;
+}
+.contact h1 {
+  font-weight: 500;
+  font-size: 7vmin;
+  padding-top: 80px;
+}
+.contact p {
+  font-size: 3vmin;
+  color: #1b263b;
+}
+.contact-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+.contact-col input,
+.contact-col textarea {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 15px;
+  border: 1px solid #1b263bd2;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: #ffffffc8;
+  font-size: 18px;
+}
+.contact-col button {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 18px;
+  font-size: 2.8vmin;
+}
+.contact-col button .fa-solid {
+  padding: 5px;
+}
+.contact-col h2 {
+  width: 100%;
+  font-size: 6vmin;
+  font-weight: 400;
+  margin-bottom: 25px;
+  text-align: left;
+}
+.contact-col a {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  color: #1b263bd2;
+  background: #ffffffc8;
+  margin-bottom: 25px;
+  padding: 18px;
+  border-radius: 10px;
+  align-items: center;
+  border: 1px solid #1b263bd2;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-col a:hover {
+  color: #ef233c;
+  border: 1px solid #ef233c;
+  transform: scale(1.02);
+}
+.contact-col a .fa-brands {
+  font-size: 24px;
+  margin-right: 20px;
+}
+.contact-col a .fa-solid {
+  font-size: 21px;
+  margin-right: 20px;
+}
+.contact-col a h3 {
+  font-weight: 400;
+}
+/*Media query*/
+@media (max-width: 768px) {
+  /*Nav-links*/
+
+  .nav-links {
+    width: 220px;
+    height: 100vh;
+    background: #ef233bf1;
+    position: fixed;
+    top: 0;
+    right: -220px;
+    z-index: 2;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    transition: 0.5s;
+  }
+  .nav-links ul li {
+    display: block;
+    padding: 8px 0;
+    margin: 0;
+    box-shadow: none;
+    border: none;
+  }
+  .nav-links ul {
+    text-align: left;
+    padding: 30px;
+  }
+
+  .nav-links ul li a {
+    color: #fff;
+  }
+  .nav-links ul li:hover:after {
+    display: none;
+  }
+  .nav-links ul li a:hover {
+    color: #ffff;
+  }
+  nav a {
+    text-decoration: none;
+  }
+  nav .fa-solid {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .header-image {
+    margin-top: 50px;
+    width: 80%;
+  }
+
+  .header-content {
+    width: 100%;
+    padding: 25px 0;
+  }
+  .icons .fa-brands {
+    font-size: 14px;
+    padding: 4px;
+    border: 1px solid #0eb1ac;
+  }
+  .header-image img:hover {
+    transform: none;
+  }
+
+  /*Skill section*/
+  .row-all {
+    flex-direction: column;
+  }
+  .skill-col {
+    width: 80%;
+    margin: 10px auto;
+  }
+  .skill-col hr {
+    height: 0.5px;
+  }
+
+  /*about section*/
+  .about-content {
+    width: 100%;
+  }
+  .about-img {
+    width: 280px;
+    height: 280px;
+    margin: auto;
+  }
+  /*conatct section*/
+  .contact-col {
+    margin-bottom: 80px;
+  }
+}
+
+/*animations and effects*/
+
+a:focus,
+.ctn:focus,
+.fa-brands:focus {
+  outline: 2px dashed #0eb1ac;
+  outline-offset: 4px;
+}
