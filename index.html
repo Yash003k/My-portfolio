@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-------------------------- header -------------------------------->
+    <header>
+      <nav>
+        <h1>MY PORTFOLIO</h1>
+        <div class="nav-links">
+          <i class="fa-solid fa-square-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="row">
+        <div class="header-image">
+          <img src="images/web-developer.jpg" />
+        </div>
+        <div class="header-content">
+          <h3>Hello, Myself</h3>
+          <h1>Yash Kasurde</h1>
+          <h3>And I'm a <span id="element"></span></h3>
+          <p>
+            Enthusiastic web developer with strong foundation in HTML, CSS,
+            JavaScript, and responsive design. Experienced in building clean,
+            user-friendly websites through regular practice and personal
+            projects. Quick learner, team player, and eager to grow in a
+            professional development environment.
+          </p>
+          <div class="icons">
+            <a
+              href="https://www.linkedin.com/in/yash-kasurde-8b967825a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/yash.kasurde.31" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/y.kasurde?igsh=MWhmZGR3MGtvdTFydg=="
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/Yash003k" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <a
+            href="images/Yash_resume.pdf"
+            download=""
+            target="_blank"
+            class="ctn"
+          >
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-------------------------- Skill section -------------------------------->
+
+    <section id="skills" class="skill-section">
+      <h1>Technical Skills</h1>
+      <p>A showcase of my knowledge and proficiencies.</p>
+      <div class="row-all">
+        <div class="skill-col">
+          <img src="images/html-logo.jpg" alt="html-logo" />
+          <h2>HTML</h2>
+          <hr />
+          <p>
+            "Experienced in writing clean, semantic HTML5 to create accessible
+            and well-structured web pages. Familiar with best practices for SEO
+            and cross-browser compatibility."
+          </p>
+        </div>
+        <div class="skill-col">
+          <img src="images/css-logo.jpg" alt="css-logo" />
+          <h2>CSS</h2>
+          <hr />
+          <p>
+            "Proficient in writing clean, responsive CSS for modern web design.
+            Skilled in using Flexbox, Grid, media queries, and custom properties
+            to create visually appealing, mobile-friendly layouts."
+          </p>
+        </div>
+        <div class="skill-col">
+          <img src="images/javascript-logo.jpg" alt="javascript-logo" />
+          <h2>JavaScript</h2>
+          <hr />
+          <p>
+            "Experienced in modern JavaScript, including asynchronous
+            programming, DOM manipulation and event handling. Comfortable
+            building interactive features."
+          </p>
+        </div>
+        <div class="skill-col">
+          <img src="images/mysql-logo.jpg" alt="MySQL-logo" />
+          <h2>MySQL</h2>
+          <hr />
+          <p>
+            "Skilled in managing relational databases using MySQL. Proficient in
+            writing efficient SQL queries, joins, subqueries, and performing
+            data normalization."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------- About section -------------------------------->
+
+    <section id="about" class="about">
+      <h1>About Me</h1>
+      <p>Bringing ideas to life with clean, responsive web design.</p>
+      <div class="row-all">
+        <div class="about-img">
+          <img src="images/my photo.jpeg" alt="about.img" />
+        </div>
+        <div class="about-content">
+          <h2>
+            My Name Is Yash Kasurde<br />& I'm
+            <span>Computer Engineer</span>
+          </h2>
+          <p>
+            A passionate Web Developer and Programmer with a knack for creating
+            clean, efficient, and user-friendly websites. I enjoy turning
+            complex problems into simple, beautiful, and intuitive solutions.
+          </p>
+          <p>
+            I specialize in modern web technologies like HTML, CSS, JavaScript
+            and also in MySQL and basic knowledge about python. I'm also trying
+            to improve my knowledge by learning new technologies like JavaScript
+            frameworks (React and other), PHP and also working on small projects
+            like making webpages and websites using HTML, CSS and JavaScript.
+            I’m constantly learning and expanding my skill set, always aiming to
+            improve the digital experiences I create.
+          </p>
+          <a href="#contact" class="ctn">Talk To Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------- contact section -------------------------------->
+    <section id="contact" class="contact">
+      <h1>Contact Me</h1>
+      <p>
+        Let's work together! Feel free to reach out via the form below or
+        through my socials.
+      </p>
+      <div class="row-all">
+        <div class="contact-col">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            autocomplete="on"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="3e122a8c-b619-4450-a8d8-5c33ea4d30ad"
+            />
+
+            <input name="name" type="text" placeholder="Your Name" required />
+            <input
+              name="email"
+              type="email"
+              placeholder="Your Email"
+              required
+            />
+            <input
+              name="subject"
+              type="text"
+              placeholder=" Your Subject"
+              required
+            />
+            <textarea
+              name="comment"
+              rows="6"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit" class="ctn" target="_blank">
+              <i class="fa-solid fa-paper-plane"></i>Send Message
+            </button>
+          </form>
+        </div>
+        <div class="contact-col">
+          <h2>Connect With Me</h2>
+          <a href="mailto:yashkasurde40@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Email</h3>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yash-kasurde-8b967825a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+          </a>
+          <a href="https://github.com/Yash003k" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <h3>GitHub</h3>
+          </a>
+          <a
+            href="https://www.instagram.com/y.kasurde?igsh=MWhmZGR3MGtvdTFydg=="
+            target="_blank"
+          >
+            <i class="fa-brands fa-square-instagram"></i>
+            <h3>Instagram</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!---------------- Scriting ---------------->
+    <script>
+      let navLinks = document.querySelector(".nav-links");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-220px";
+      }
+    </script>
+    <!---------------- Typed Script ---------------->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Computer Engineer", "Web Developer", "Programmer"],
+        typeSpeed: 60,
+        backSpeed: 60,
+        backDelay: 1000,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
